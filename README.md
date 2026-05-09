@@ -30,12 +30,12 @@ The static site is exported to `out/`.
 
 The workflow in `.github/workflows/pages.yml` installs dependencies, builds the static export, uploads `out/`, and deploys it to GitHub Pages.
 
-For project Pages, the production build enables:
+For project Pages, the production build enables a repository base path:
 
-- `basePath: /focusTomato`
-- `assetPrefix: /focusTomato/`
+- `basePath: /<repo-name>`
+- `assetPrefix: /<repo-name>`
 
-This is controlled by the `GITHUB_PAGES=true` environment variable in the workflow. Local builds keep the base path empty so development works at `/`.
+This is controlled by the `GITHUB_PAGES=true` environment variable in the workflow and derived from `GITHUB_REPOSITORY`, so the exported site works even if the repository name changes. Local builds keep the base path empty so development works at `/`.
 
 ## Content Configuration
 

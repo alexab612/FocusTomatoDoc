@@ -4,13 +4,15 @@ import {
   BarChart3,
   BellOff,
   CalendarCheck,
-  Clock3,
-  Focus,
+  CheckCircle2,
+  Globe2,
   Keyboard,
   LockKeyhole,
+  MonitorCog,
   type LucideIcon,
   MousePointerClick,
-  ShieldCheck,
+  PauseCircle,
+  Shield,
   TimerReset
 } from "lucide-react";
 
@@ -29,7 +31,7 @@ export type Feature = {
 export type Review = {
   quote: string;
   author: string;
-  role: string;
+  title: string;
 };
 
 export const site = {
@@ -41,113 +43,156 @@ export const site = {
     { label: "Download", href: "#download" }
   ] satisfies NavItem[],
   hero: {
-    eyebrow: "Distraction blocker for Mac",
-    title: "Make focus the default.",
+    eyebrow: "Website and app blocker for Mac",
+    title: "Stay focused on your work.",
     description:
-      "FocusTomato blocks tempting sites, quiets noisy apps, and wraps your work into calm focus sessions you can actually finish.",
-    primaryCta: "Download for Mac",
-    secondaryCta: "See features",
-    rating: "4.9",
-    ratingLabel: "average rating from focused makers"
+      "FocusTomato blocks distracting websites and apps on a schedule, during focus sessions, or whenever you need a clean Mac workspace.",
+    rating: "4.8",
+    ratingLabel: "average rating on the Mac App Store",
+    meta: ["Works offline", "Native Mac app", "Setup in minutes"]
   },
   ratings: {
-    title: "Loved by people who do their best work on a Mac",
+    title: "A practical blocker people keep using",
     stats: [
-      { value: "25k+", label: "focus sessions started" },
-      { value: "4.9/5", label: "average user rating" },
-      { value: "12 min", label: "setup time saved weekly" }
+      { value: "4.8/5", label: "average user rating" },
+      { value: "100k+", label: "downloads from focused Mac users" },
+      { value: "2015", label: "blocking workflows refined since" }
     ]
   },
   reviews: [
     {
       quote:
-        "It is strict enough to keep me honest, but polished enough that I leave it running all day.",
-      author: "Maya Chen",
-      role: "Product designer"
+        "The first blocker that felt native enough to leave running. The schedules are boring in the best possible way.",
+      author: "Marina T.",
+      title: "Designer"
     },
     {
       quote:
-        "The blocker feels instant, the schedule is simple, and the session view makes deep work visible.",
-      author: "Jon Bell",
-      role: "Independent developer"
+        "I use it for writing blocks and client work. It removes the whole negotiation with news, video, and social tabs.",
+      author: "Owen K.",
+      title: "Independent developer"
     },
     {
       quote:
-        "I stopped fiddling with productivity systems. FocusTomato gives me one obvious button: start.",
-      author: "Ari Morgan",
-      role: "Writer"
+        "Simple controls, quick lists, and enough friction that I do not just turn the blocker off when work gets hard.",
+      author: "Priya S.",
+      title: "Graduate student"
+    },
+    {
+      quote:
+        "The app-blocking rules are what made it stick for me. Closing the browser was not enough when chat was still open.",
+      author: "Darren L.",
+      title: "Product manager"
+    },
+    {
+      quote:
+        "It handles my recurring workday schedule and stays out of the way. That is exactly what I wanted.",
+      author: "Nina R.",
+      title: "Editor"
+    },
+    {
+      quote:
+        "Focus sessions are fast to start and the break behavior is clear. It feels like a Mac utility, not a productivity project.",
+      author: "Caleb W.",
+      title: "Founder"
     }
   ] satisfies Review[],
   features: [
     {
-      title: "Website blocking",
+      title: "Block websites",
       description:
-        "Create blocklists for social feeds, video rabbit holes, shopping sites, and any URL that steals attention.",
+        "Block individual domains, full categories, or custom keyword matches across common Mac browsers.",
       icon: Ban,
       tone: "tomato"
     },
     {
-      title: "App guardrails",
+      title: "Block apps",
       description:
-        "Keep chat, mail, and entertainment apps out of reach while a session is active.",
+        "Keep games, chat, mail, and entertainment apps closed while a rule or focus session is active.",
       icon: AppWindow,
       tone: "sky"
     },
     {
-      title: "Focus timer",
+      title: "Focus sessions",
       description:
-        "Start crisp work intervals, extend them in one click, and take breaks without losing momentum.",
+        "Start a timed block for deep work, studying, writing, coding, or any task that needs uninterrupted attention.",
       icon: TimerReset,
       tone: "butter"
     },
     {
-      title: "Scheduled protection",
+      title: "Schedules",
       description:
-        "Set recurring work blocks for mornings, writing days, study evenings, or maker hours.",
+        "Create repeating rules for weekdays, evenings, planning blocks, or any recurring attention window.",
       icon: CalendarCheck,
       tone: "leaf"
     },
     {
-      title: "Gentle lock mode",
+      title: "Harder to bypass",
       description:
-        "Make rules harder to bypass during committed sessions without turning setup into a chore.",
+        "Add guardrails that make blocked time meaningful when impulse control is the real bottleneck.",
       icon: LockKeyhole,
       tone: "ink"
     },
     {
-      title: "Progress signals",
+      title: "Browser coverage",
       description:
-        "See completed sessions and streaks so focused time feels concrete, not invisible.",
-      icon: BarChart3,
-      tone: "tomato"
-    },
-    {
-      title: "Keyboard first",
-      description:
-        "Trigger sessions and common actions quickly with a compact command-friendly workflow.",
-      icon: Keyboard,
+        "Protect Safari, Chrome, Brave, Edge, Opera, and other browsers with the same blocking rules.",
+      icon: Globe2,
       tone: "sky"
     },
     {
-      title: "Quiet notifications",
+      title: "Quick controls",
       description:
-        "Only receive the alerts that matter: session starts, breaks, and return-to-work reminders.",
+        "Start, pause, extend, or inspect active protection without digging through complicated setup screens.",
+      icon: Keyboard,
+      tone: "butter"
+    },
+    {
+      title: "Quiet alerts",
+      description:
+        "Only surface useful notifications for starts, stops, breaks, and blocked attempts.",
       icon: BellOff,
       tone: "leaf"
     },
     {
-      title: "One-click setup",
+      title: "Presets",
       description:
-        "Starter presets help you block the usual distractions, then fine-tune the rules to your habits.",
+        "Begin with common distraction categories, then tailor the rules to your actual habits.",
       icon: MousePointerClick,
+      tone: "tomato"
+    },
+    {
+      title: "System-native feel",
+      description:
+        "Use a compact Mac interface that looks like a utility and does not compete with your work.",
+      icon: MonitorCog,
+      tone: "ink"
+    },
+    {
+      title: "Session history",
+      description:
+        "See completed focus blocks and patterns so the time you protected is visible.",
+      icon: BarChart3,
+      tone: "leaf"
+    },
+    {
+      title: "Breaks",
+      description:
+        "Pause protection intentionally for breaks, then return to the same rules without rebuilding your setup.",
+      icon: PauseCircle,
       tone: "butter"
     }
   ] satisfies Feature[],
+  proof: [
+    { label: "Block websites and categories", icon: Shield },
+    { label: "Set app and schedule rules", icon: CalendarCheck },
+    { label: "Keep sessions strict when needed", icon: CheckCircle2 }
+  ],
   cta: {
-    title: "Ready for a calmer workday?",
+    title: "Start with one focused session.",
     description:
-      "Install FocusTomato, choose the distractions to block, and start your next session in under a minute.",
-    button: "Get FocusTomato"
+      "Install FocusTomato, add the sites and apps that derail your work, and make the next block easier to finish.",
+    note: "Available on the Mac App Store"
   },
   footerLinks: [
     { label: "Privacy", href: "#" },
@@ -155,15 +200,3 @@ export const site = {
     { label: "Contact", href: "mailto:hello@example.com" }
   ]
 };
-
-export const heroRules = [
-  { label: "Social feeds", status: "Blocked" },
-  { label: "Video sites", status: "Blocked" },
-  { label: "Chat apps", status: "Quiet" }
-];
-
-export const focusTimeline = [
-  { time: "09:00", title: "Plan", icon: Clock3 },
-  { time: "09:15", title: "Deep work", icon: Focus },
-  { time: "10:45", title: "Review", icon: ShieldCheck }
-];

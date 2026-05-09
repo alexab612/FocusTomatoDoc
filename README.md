@@ -45,4 +45,4 @@ Homepage copy, navigation, ratings, reviews, feature cards, and footer links liv
 
 - The site only implements the homepage.
 - There are no SSR features, server actions, or API routes.
-- Visuals are CSS-built mockups and simple shapes rather than copied private assets.
+- Visuals use bundled public assets for the Mac screenshot, app icon, App Store badge, and rating stars.

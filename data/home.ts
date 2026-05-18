@@ -195,8 +195,8 @@ export const site = {
     note: "Available on the Mac App Store"
   },
   footerLinks: [
-    { label: "Privacy", href: "#" },
-    { label: "Terms", href: "#" },
-    { label: "Contact", href: "mailto:hello@example.com" }
+    { label: "Privacy", href: "privacy/" },
+    { label: "Terms", href: "terms/" },
+    { label: "Contact", href: "https://github.com/alexab612" }
   ]
 };

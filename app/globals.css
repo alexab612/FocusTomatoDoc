@@ -3,9 +3,16 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: light;
-  background: #fbfaf7;
-  color: #151515;
+  color-scheme: light dark;
+  --page-bg: #fbfaf7;
+  --surface: #ffffff;
+  --band: #ffffff;
+  --soft: #f6f8fb;
+  --ink: #151515;
+  --muted: rgba(21, 21, 21, 0.64);
+  --border: rgba(21, 21, 21, 0.1);
+  background: var(--page-bg);
+  color: var(--ink);
 }
 
 * {
@@ -19,9 +26,41 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(180deg, #fbfaf7 0%, #ffffff 44%, #fbfaf7 100%);
-  color: #151515;
+  background: var(--page-bg);
+  color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+[data-theme="light"] {
+  --page-bg: #fbfaf7;
+  --surface: #ffffff;
+  --band: #ffffff;
+  --soft: #f6f8fb;
+  --ink: #151515;
+  --muted: rgba(21, 21, 21, 0.64);
+  --border: rgba(21, 21, 21, 0.1);
+}
+
+[data-theme="dark"] {
+  --page-bg: #0e1117;
+  --surface: #171c24;
+  --band: #121721;
+  --soft: #1d2430;
+  --ink: #f4f7fb;
+  --muted: rgba(244, 247, 251, 0.68);
+  --border: rgba(255, 255, 255, 0.12);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-bg: #0e1117;
+    --surface: #171c24;
+    --band: #121721;
+    --soft: #1d2430;
+    --ink: #f4f7fb;
+    --muted: rgba(244, 247, 251, 0.68);
+    --border: rgba(255, 255, 255, 0.12);
+  }
 }
 
 a {

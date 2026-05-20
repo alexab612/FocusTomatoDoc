@@ -112,11 +112,7 @@ export const site = {
       ratings: {
         eyebrow: "Reviews",
         title: "A practical blocker people keep using",
-        stats: [
-          { value: "4.8/5", label: "average user rating" },
-          { value: "100k+", label: "downloads from focused Mac users" },
-          { value: "2015", label: "blocking workflows refined since" }
-        ]
+        stats: [{ value: "2026", label: "blocking workflows refined since" }]
       },
       reviews: [
         {
@@ -269,11 +265,7 @@ export const site = {
       ratings: {
         eyebrow: "评价",
         title: "真正会被持续使用的专注工具",
-        stats: [
-          { value: "4.8/5", label: "用户平均评分" },
-          { value: "100k+", label: "专注用户下载" },
-          { value: "2015", label: "拦截工作流持续打磨" }
-        ]
+        stats: [{ value: "2026", label: "blocking workflows refined since" }]
       },
       reviews: [
         {

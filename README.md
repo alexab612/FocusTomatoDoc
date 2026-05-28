@@ -39,10 +39,10 @@ This is controlled by the `GITHUB_PAGES=true` environment variable in the workfl
 
 ## Content Configuration
 
-Homepage copy, navigation, ratings, reviews, feature cards, and footer links live in `data/home.ts`.
+Homepage copy, navigation, feature cards, and footer links live in `data/home.ts`.
 
 ## Notes
 
 - The site only implements the homepage.
 - There are no SSR features, server actions, or API routes.
-- Visuals use bundled public assets for the Mac screenshot, app icon, App Store badge, and rating stars.
+- Visuals use bundled public assets for the Mac screenshot, app icon, and download badge.

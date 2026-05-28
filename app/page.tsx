@@ -4,7 +4,6 @@ import { Feature, Locale, site, ThemeMode } from "@/data/home";
 import { Header } from "@/components/Header";
 import { HeroMockup } from "@/components/HeroMockup";
 import appIcon from "@/public/img/app-icon-37.png";
-import starRating from "@/public/img/5-star-rating.svg";
 import { CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -70,56 +69,9 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div className="mt-7 flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-4">
-            <Image src={starRating} alt="Five star rating" className="h-5 w-auto" priority />
-            <p className="text-sm font-bold text-[var(--muted)]">
-              <span className="text-[var(--ink)]">{copy.hero.rating}</span> {copy.hero.ratingLabel}
-            </p>
-          </div>
         </div>
         <div className="mt-11 sm:mt-14">
           <HeroMockup copy={copy} />
-        </div>
-      </section>
-
-      <section id="reviews" className="bg-[var(--band)] py-16 sm:py-20">
-        <div className="section-shell">
-          <div className="grid gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:items-end">
-            <div>
-              <p className="text-sm font-black uppercase text-tomato">{copy.ratings.eyebrow}</p>
-              <h2 className="mt-3 max-w-lg text-3xl font-black leading-tight text-[var(--ink)] sm:text-5xl">
-                {copy.ratings.title}
-              </h2>
-            </div>
-            <div className="grid gap-3 sm:grid-cols-3">
-              {copy.ratings.stats.map((stat) => (
-                <div key={stat.label} className="rounded-lg border border-[var(--border)] bg-[var(--soft)] p-5">
-                  <p className="text-3xl font-black text-[var(--ink)]">{stat.value}</p>
-                  <p className="mt-1 text-sm font-semibold text-[var(--muted)]">{stat.label}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="mt-10 grid gap-4 md:grid-cols-3">
-            {copy.reviews.map((review) => (
-              <article key={review.author} className="rounded-lg border border-[var(--border)] bg-[var(--surface)] p-6 shadow-sm">
-                <Image src={starRating} alt="" className="mb-5 h-4 w-auto" />
-                <p className="text-base font-bold leading-7 text-[var(--ink)]">&ldquo;{review.quote}&rdquo;</p>
-                <div className="mt-6 flex items-center gap-3 border-t border-[var(--border)] pt-4">
-                  <div className="grid h-10 w-10 place-items-center rounded-lg bg-tomato/10 text-sm font-black text-tomato">
-                    {review.author
-                      .split(" ")
-                      .map((part) => part[0])
-                      .join("")}
-                  </div>
-                  <div>
-                    <p className="text-sm font-black text-[var(--ink)]">{review.author}</p>
-                    <p className="text-xs font-semibold text-[var(--muted)]">{review.title}</p>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
         </div>
       </section>
 

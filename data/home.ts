@@ -31,28 +31,14 @@ export type Feature = {
   tone: "tomato" | "leaf" | "sky" | "butter" | "ink";
 };
 
-export type Review = {
-  quote: string;
-  author: string;
-  title: string;
-};
-
 export type HomeCopy = {
   nav: NavItem[];
   hero: {
     eyebrow: string;
     title: string;
     description: string;
-    rating: string;
-    ratingLabel: string;
     meta: string[];
   };
-  ratings: {
-    eyebrow: string;
-    title: string;
-    stats: Array<{ value: string; label: string }>;
-  };
-  reviews: Review[];
   featuresIntro: {
     eyebrow: string;
     title: string;
@@ -96,7 +82,6 @@ export const site = {
   copy: {
     en: {
       nav: [
-        { label: "Reviews", href: "#reviews" },
         { label: "Features", href: "#features" },
         { label: "Download", href: "#download" }
       ],
@@ -105,35 +90,8 @@ export const site = {
         title: "Stay focused on your work.",
         description:
           "FocusTomato blocks distracting websites and apps on a schedule, during focus sessions, or whenever you need a clean Mac workspace.",
-        rating: "4.8",
-        ratingLabel: "average rating from focused Mac users",
         meta: ["Works offline", "Native Mac app", "Setup in minutes"]
       },
-      ratings: {
-        eyebrow: "Reviews",
-        title: "A practical blocker people keep using",
-        stats: [{ value: "2026", label: "blocking workflows refined since" }]
-      },
-      reviews: [
-        {
-          quote:
-            "The first blocker that felt native enough to leave running. The schedules are boring in the best possible way.",
-          author: "Marina T.",
-          title: "Designer"
-        },
-        {
-          quote:
-            "I use it for writing blocks and client work. It removes the whole negotiation with news, video, and social tabs.",
-          author: "Owen K.",
-          title: "Independent developer"
-        },
-        {
-          quote:
-            "Simple controls, quick lists, and enough friction that I do not just turn the blocker off when work gets hard.",
-          author: "Priya S.",
-          title: "Graduate student"
-        }
-      ],
       featuresIntro: {
         eyebrow: "Features",
         title: "Block the distractions that break deep work.",
@@ -249,7 +207,6 @@ export const site = {
     },
     zh: {
       nav: [
-        { label: "评价", href: "#reviews" },
         { label: "功能", href: "#features" },
         { label: "下载", href: "#download" }
       ],
@@ -258,32 +215,8 @@ export const site = {
         title: "把注意力留给真正的工作。",
         description:
           "FocusTomato 可以按计划、专注会话或临时需求拦截分心网站和应用，让 Mac 工作区保持干净。",
-        rating: "4.8",
-        ratingLabel: "专注用户平均评分",
         meta: ["离线可用", "原生 Mac 应用", "几分钟完成设置"]
       },
-      ratings: {
-        eyebrow: "评价",
-        title: "真正会被持续使用的专注工具",
-        stats: [{ value: "2026", label: "blocking workflows refined since" }]
-      },
-      reviews: [
-        {
-          quote: "这是第一个我愿意长期运行的拦截器。计划功能很稳定，刚好不打扰。",
-          author: "Marina T.",
-          title: "设计师"
-        },
-        {
-          quote: "我用它写作和做客户项目。新闻、视频、社交网页不会再反复打断我。",
-          author: "Owen K.",
-          title: "独立开发者"
-        },
-        {
-          quote: "控制简单、列表清楚，而且有足够阻力，不会一遇到困难就关掉拦截。",
-          author: "Priya S.",
-          title: "研究生"
-        }
-      ],
       featuresIntro: {
         eyebrow: "功能",
         title: "拦住打断深度工作的分心源。",

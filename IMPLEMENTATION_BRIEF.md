@@ -8,7 +8,7 @@
 - 不依赖 SSR / API routes
 - 必须支持 `npm run build` 生成静态导出
 - 需要 GitHub Actions 自动部署到 GitHub Pages
-- 尽量保留原站信息架构：Header、Hero、评分/评论、功能卡片、底部 CTA、Footer
+- 尽量保留原站信息架构：Header、Hero、功能卡片、底部 CTA、Footer
 - 视觉上高保真，但允许使用自绘/替代图形，避免依赖原站私有资源
 
 验收标准：

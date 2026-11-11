@@ -1,4 +1,4 @@
-# focusTomato 实现简述
+# Inchbox 网站实现简述
 
 目标：高保真复刻 https://onefocusapp.com/ 首页，使用 Next.js + Tailwind CSS，并兼容 GitHub Pages 静态发布。
 

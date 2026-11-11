@@ -1,4 +1,4 @@
-# focusTomato
+# Inchbox website
 
 A high-fidelity, static homepage clone inspired by 1Focus, built with Next.js and Tailwind CSS for GitHub Pages.
 

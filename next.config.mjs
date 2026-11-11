@@ -3,7 +3,7 @@ const normalizeBasePath = (value = "") => {
   return `/${value.replace(/^\/+|\/+$/g, "")}`;
 };
 
-const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "focusTomato";
+const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "InchboxDoc";
 const isUserOrOrgPagesRepo = repoName.endsWith(".github.io");
 const basePath =
   process.env.GITHUB_PAGES === "true" && !isUserOrOrgPagesRepo

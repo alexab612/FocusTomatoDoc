@@ -3,6 +3,7 @@
 import { Feature, Locale, site, ThemeMode } from "@/data/home";
 import { Header } from "@/components/Header";
 import { HeroMockup } from "@/components/HeroMockup";
+import downloadBadge from "@/public/img/download-badge.svg";
 import appIcon from "@/public/img/app-icon-37.png";
 import { CheckCircle2 } from "lucide-react";
 import Image from "next/image";
@@ -22,19 +23,19 @@ export default function Home() {
   const copy = site.copy[locale];
 
   useEffect(() => {
-    const savedLocale = window.localStorage.getItem("focustomato-locale") as Locale | null;
-    const savedTheme = window.localStorage.getItem("focustomato-theme") as ThemeMode | null;
+    const savedLocale = window.localStorage.getItem("inchbox-locale") as Locale | null;
+    const savedTheme = window.localStorage.getItem("inchbox-theme") as ThemeMode | null;
     if (savedLocale === "en" || savedLocale === "zh") setLocale(savedLocale);
     if (savedTheme === "light" || savedTheme === "dark") setTheme(savedTheme);
   }, []);
 
   useEffect(() => {
-    window.localStorage.setItem("focustomato-locale", locale);
+    window.localStorage.setItem("inchbox-locale", locale);
     document.documentElement.lang = locale === "zh" ? "zh-CN" : "en";
   }, [locale]);
 
   useEffect(() => {
-    window.localStorage.setItem("focustomato-theme", theme);
+    window.localStorage.setItem("inchbox-theme", theme);
   }, [theme]);
 
   return (
@@ -55,10 +56,10 @@ export default function Home() {
           <div className="mt-8 flex flex-col items-center justify-center gap-4">
             <a
               href={site.downloadUrl}
-              className="rounded-xl bg-[var(--ink)] px-6 py-3 text-base font-extrabold text-[var(--surface)] shadow-button transition hover:-translate-y-0.5"
+              className="overflow-hidden rounded-xl shadow-button transition hover:-translate-y-0.5"
               aria-label={copy.controls.download}
             >
-              {copy.controls.download}
+              <Image src={downloadBadge} alt={copy.controls.download} className="h-12 w-auto" priority />
             </a>
             <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm font-bold text-[var(--muted)]">
               {copy.hero.meta.map((item) => (
@@ -113,10 +114,10 @@ export default function Home() {
           <div className="mt-8 flex flex-col items-center gap-3">
             <a
               href={site.downloadUrl}
-              className="rounded-xl bg-[var(--ink)] px-6 py-3 text-base font-extrabold text-[var(--surface)] shadow-button transition hover:-translate-y-0.5"
+              className="overflow-hidden rounded-xl shadow-button transition hover:-translate-y-0.5"
               aria-label={copy.controls.download}
             >
-              {copy.controls.download}
+              <Image src={downloadBadge} alt={copy.controls.download} className="h-12 w-auto" />
             </a>
             <p className="text-sm font-bold text-[var(--muted)]">{copy.cta.note}</p>
           </div>

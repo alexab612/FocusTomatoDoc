@@ -50,7 +50,7 @@ export function LegalPage({
     <main className="min-h-screen bg-[var(--page-bg)] text-[var(--ink)]">
       <section className="section-shell py-10 sm:py-14">
         <a href="../" className="text-sm font-bold text-tomato transition hover:text-[var(--ink)]">
-          Back to FocusTomato
+          Back to Inchbox
         </a>
 
         <div className="mt-8 max-w-3xl">

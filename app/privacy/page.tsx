@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { LegalPage } from "@/components/LegalPage";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - FocusTomato",
-  description: "Privacy Policy for FocusTomato."
+  title: "Privacy Policy - Inchbox",
+  description: "Privacy Policy for Inchbox."
 };
 
 export default function PrivacyPage() {
@@ -12,12 +12,12 @@ export default function PrivacyPage() {
       eyebrow="Legal"
       title="Privacy Policy"
       effectiveDate="October 28, 2026"
-      intro="FocusTomato is a local-first macOS app. It does not collect, upload, or share any personal data — all settings and history stay on your Mac. 简而言之：FocusTomato 不收集、不上传任何数据，所有设置只保存在你的 Mac 上。"
+      intro="Inchbox is a local-first macOS app. It does not collect, upload, or share any personal data — all settings and history stay on your Mac. 简而言之：Inchbox 不收集、不上传任何数据，所有设置只保存在你的 Mac 上。"
       chineseSections={[
         {
           title: "我们收集什么",
           body: [
-            "FocusTomato 不收集任何个人数据，也不会把任何数据上传到我们或第三方的服务器。应用不包含账号系统、远程分析服务、广告追踪 SDK 或云端同步服务，运行时不会主动发起网络请求。",
+            "Inchbox 不收集任何个人数据，也不会把任何数据上传到我们或第三方的服务器。应用不包含账号系统、远程分析服务、广告追踪 SDK 或云端同步服务，运行时不会主动发起网络请求。",
             "我们不会出售个人信息，也不会为了跨应用或跨网站追踪而收集数据。"
           ]
         },
@@ -25,7 +25,7 @@ export default function PrivacyPage() {
           title: "本地存储的数据",
           body: [
             "应用会在你的 Mac 本地保存设置、预设、专注记录、统计信息，以及设备锁定的状态和紧急解锁记录，以便恢复你的偏好、在重启后恢复锁定并展示使用历史。",
-            "这些数据保存在设备本地，不会由 FocusTomato 自动上传。"
+            "这些数据保存在设备本地，不会由 Inchbox 自动上传。"
           ]
         },
         {
@@ -39,7 +39,7 @@ export default function PrivacyPage() {
         {
           title: "儿童隐私",
           body: [
-            "FocusTomato 不会故意收集儿童的个人信息。由于当前版本不进行远程数据收集，我们也不会基于年龄建立用户画像。"
+            "Inchbox 不会故意收集儿童的个人信息。由于当前版本不进行远程数据收集，我们也不会基于年龄建立用户画像。"
           ]
         },
         {
@@ -59,15 +59,15 @@ export default function PrivacyPage() {
         {
           title: "What We Collect",
           body: [
-            "FocusTomato does not collect any personal data and does not upload any data to our servers or to third parties. The app has no accounts, remote analytics, advertising trackers, or cloud sync, and it does not make network requests while running.",
+            "Inchbox does not collect any personal data and does not upload any data to our servers or to third parties. The app has no accounts, remote analytics, advertising trackers, or cloud sync, and it does not make network requests while running.",
             "We do not sell personal information or collect data for cross-app or cross-website tracking."
           ]
         },
         {
           title: "Data Stored Locally",
           body: [
-            "FocusTomato stores settings, presets, focus-session history, statistics, device-lock state, and emergency-unlock records locally on your Mac so it can restore your preferences, resume a lock after a restart, and show your history.",
-            "This data stays on your device and is not automatically uploaded by FocusTomato."
+            "Inchbox stores settings, presets, focus-session history, statistics, device-lock state, and emergency-unlock records locally on your Mac so it can restore your preferences, resume a lock after a restart, and show your history.",
+            "This data stays on your device and is not automatically uploaded by Inchbox."
           ]
         },
         {
@@ -81,7 +81,7 @@ export default function PrivacyPage() {
         {
           title: "Children's Privacy",
           body: [
-            "FocusTomato does not knowingly collect personal information from children. Because the current app does not remotely collect personal data, it does not build age-based user profiles."
+            "Inchbox does not knowingly collect personal information from children. Because the current app does not remotely collect personal data, it does not build age-based user profiles."
           ]
         },
         {

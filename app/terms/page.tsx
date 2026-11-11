@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { LegalPage } from "@/components/LegalPage";
 
 export const metadata: Metadata = {
-  title: "Terms of Use - FocusTomato",
-  description: "Terms of Use for FocusTomato."
+  title: "Terms of Use - Inchbox",
+  description: "Terms of Use for Inchbox."
 };
 
 export default function TermsPage() {
@@ -12,19 +12,19 @@ export default function TermsPage() {
       eyebrow="Legal"
       title="Terms of Use"
       effectiveDate="May 18, 2026"
-      intro="FocusTomato is distributed through Apple platforms. Unless a custom agreement is provided, your use of the app is governed by Apple's Standard End User License Agreement together with the supplemental terms below."
+      intro="Inchbox is distributed through Apple platforms. Unless a custom agreement is provided, your use of the app is governed by Apple's Standard End User License Agreement together with the supplemental terms below."
       chineseSections={[
         {
           title: "许可协议",
           body: [
-            "FocusTomato 通过 Apple 平台分发。除非另行提供自定义许可协议，否则你的使用受 Apple 标准最终用户许可协议约束。",
+            "Inchbox 通过 Apple 平台分发。除非另行提供自定义许可协议，否则你的使用受 Apple 标准最终用户许可协议约束。",
             "Apple 标准 EULA 可在 Apple 官方法律页面查看：https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
           ]
         },
         {
           title: "使用范围",
           body: [
-            "你可以按照应用功能和适用法律使用 FocusTomato。你不得尝试破坏、滥用或规避应用、操作系统或第三方服务的安全机制。"
+            "你可以按照应用功能和适用法律使用 Inchbox。你不得尝试破坏、滥用或规避应用、操作系统或第三方服务的安全机制。"
           ]
         },
         {
@@ -50,14 +50,14 @@ export default function TermsPage() {
         {
           title: "License Agreement",
           body: [
-            "FocusTomato is distributed through Apple platforms. Unless a custom license agreement is provided, your use of the app is governed by Apple's Standard End User License Agreement.",
+            "Inchbox is distributed through Apple platforms. Unless a custom license agreement is provided, your use of the app is governed by Apple's Standard End User License Agreement.",
             "Apple's Standard EULA is available on Apple's official legal site: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
           ]
         },
         {
           title: "Permitted Use",
           body: [
-            "You may use FocusTomato according to its intended features and applicable law. You may not attempt to disrupt, abuse, or bypass the security of the app, the operating system, or third-party services."
+            "You may use Inchbox according to its intended features and applicable law. You may not attempt to disrupt, abuse, or bypass the security of the app, the operating system, or third-party services."
           ]
         },
         {

@@ -76,9 +76,9 @@ const commonFooterLinks = {
 } satisfies Record<Locale, NavItem[]>;
 
 export const site = {
-  productName: "FocusTomato",
-  repoName: "focusTomato",
-  downloadUrl: "https://github.com/alexab612/FocusTomato/releases",
+  productName: "Inchbox",
+  repoName: "InchboxDoc",
+  downloadUrl: "https://apps.apple.com/app/id6828462656",
   copy: {
     en: {
       nav: [
@@ -89,7 +89,7 @@ export const site = {
         eyebrow: "Website and app blocker for Mac",
         title: "Stay focused on your work.",
         description:
-          "FocusTomato blocks distracting websites and apps on a schedule, during focus sessions, or whenever you need a clean Mac workspace.",
+          "Inchbox blocks distracting websites and apps on a schedule, during focus sessions, or whenever you need a clean Mac workspace.",
         meta: ["Works offline", "Native Mac app", "Setup in minutes"]
       },
       featuresIntro: {
@@ -192,8 +192,8 @@ export const site = {
       cta: {
         title: "Start with one focused session.",
         description:
-          "Install FocusTomato, add the sites and apps that derail your work, and make the next block easier to finish.",
-        note: "Available from GitHub Releases"
+          "Install Inchbox, add the sites and apps that derail your work, and make the next block easier to finish.",
+        note: "Available on the Mac App Store"
       },
       footerText: "Website and app blocker for Mac.",
       footerLinks: commonFooterLinks.en,
@@ -202,7 +202,7 @@ export const site = {
         theme: "Theme",
         light: "Light",
         dark: "Dark",
-        download: "Download on GitHub"
+        download: "Download on the Mac App Store"
       }
     },
     zh: {
@@ -214,7 +214,7 @@ export const site = {
         eyebrow: "适用于 Mac 的网站与应用拦截器",
         title: "把注意力留给真正的工作。",
         description:
-          "FocusTomato 可以按计划、专注会话或临时需求拦截分心网站和应用，让 Mac 工作区保持干净。",
+          "Inchbox 可以按计划、专注会话或临时需求拦截分心网站和应用，让 Mac 工作区保持干净。",
         meta: ["离线可用", "原生 Mac 应用", "几分钟完成设置"]
       },
       featuresIntro: {
@@ -305,8 +305,8 @@ export const site = {
       cta: {
         title: "从一次专注会话开始。",
         description:
-          "安装 FocusTomato，加入最容易拖走注意力的网站和应用，让下一段工作更容易完成。",
-        note: "可从 GitHub Releases 下载"
+          "安装 Inchbox，加入最容易拖走注意力的网站和应用，让下一段工作更容易完成。",
+        note: "可从 Mac App Store 下载"
       },
       footerText: "适用于 Mac 的网站与应用拦截器。",
       footerLinks: commonFooterLinks.zh,
@@ -315,7 +315,7 @@ export const site = {
         theme: "主题",
         light: "浅色",
         dark: "深色",
-        download: "Download on GitHub"
+        download: "从 Mac App Store 下载"
       }
     }
   } satisfies Record<Locale, HomeCopy>

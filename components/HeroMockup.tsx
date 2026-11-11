@@ -8,7 +8,7 @@ export function HeroMockup({ copy }: { copy: HomeCopy }) {
       <div className="rounded-[26px] border border-[var(--border)] bg-[var(--surface)] p-2 shadow-soft sm:p-3">
         <Image
           src={screenshot}
-          alt="FocusTomato blocking settings with website, app, and schedule tabs"
+          alt="Inchbox blocking settings with website, app, schedule, and statistics tabs"
           className="h-auto w-full rounded-[20px]"
           priority
           sizes="(max-width: 900px) calc(100vw - 32px), 860px"

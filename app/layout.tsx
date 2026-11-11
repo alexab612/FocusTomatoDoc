@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "FocusTomato - Website Blocker for Deep Work",
+  title: "Inchbox - Website and App Blocker for Mac",
   description:
-    "A polished static homepage for FocusTomato, a distraction blocker and focus timer for intentional work."
+    "Inchbox is a native Mac app for blocking distracting websites and apps, running focus sessions, and protecting your attention."
 };
 
 export default function RootLayout({

@@ -1,4 +1,5 @@
 import { HomeCopy, Locale, site, ThemeMode } from "@/data/home";
+import downloadBadge from "@/public/img/download-badge.svg";
 import appIcon from "@/public/img/app-icon-37.png";
 import Image from "next/image";
 
@@ -13,7 +14,7 @@ type HeaderProps = {
 export function Header({ copy, locale, theme, onLocaleChange, onThemeChange }: HeaderProps) {
   return (
     <header className="section-shell flex flex-wrap items-center justify-between gap-4 py-5 sm:py-7">
-      <a href="#" className="flex items-center gap-3" aria-label="FocusTomato home">
+      <a href="#" className="flex items-center gap-3" aria-label="Inchbox home">
         <Image src={appIcon} alt="" className="h-9 w-9 rounded-lg shadow-sm" priority />
         <span className="text-lg font-extrabold tracking-normal">{site.productName}</span>
       </a>
@@ -57,10 +58,10 @@ export function Header({ copy, locale, theme, onLocaleChange, onThemeChange }: H
         </div>
         <a
           href={site.downloadUrl}
-          className="hidden rounded-lg bg-[var(--ink)] px-4 py-2 text-sm font-extrabold text-[var(--surface)] shadow-sm transition hover:-translate-y-0.5 sm:block"
+          className="hidden overflow-hidden rounded-lg shadow-sm transition hover:-translate-y-0.5 sm:block"
           aria-label={copy.controls.download}
         >
-          {copy.controls.download}
+          <Image src={downloadBadge} alt={copy.controls.download} className="h-10 w-auto" priority />
         </a>
       </div>
     </header>
